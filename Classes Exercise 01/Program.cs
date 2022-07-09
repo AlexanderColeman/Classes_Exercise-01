@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Classes_Exercise_01;
+using System;
 
 namespace Classes_Exercise_01_Answers
 {
@@ -26,6 +27,10 @@ namespace Classes_Exercise_01_Answers
             // TODO: Create a method that sets the employee's password
             // TODO: Create a method to display the employee's password
             // TODO: Create an EmployeeReport() method that takes in an employee and returns all of the props creatively displayed to the console
+            
+            var employee1 = new Employee("password1234", "John", 'J', "Cole", "234-456-8790", "Mr.", "12/22/1989");
+
+           employee1.EmployeeReport();
 
             #endregion
 
@@ -54,13 +59,21 @@ namespace Classes_Exercise_01_Answers
 
             // TODO: Create a new employee and give all of its properties values
 
+            var employee2 = new Employee("4321drowssap", "Fred", 'P', "Fittle", "564-408-9432", "Mr.", "01/12/1956");
+
 
             // TODO: Call all of the methods you created inside of that class
-
+            employee2.DisplayPassword();
+            employee2.EmployeeReport();
 
             // TODO: Create a new product and give all of its properties values
 
+            var product1 = new Product(2345678,"Corn Flakes", 3.99, 1, false, 5);
+
             // TODO: Call all of the methods you created inside of that class
+
+            product1.GetProductCount();
+            product1.GetProductId();
 
 
         }
